@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: 
+  name: simple-demo
+spec: 
+  destination: 
+    server: 'https://kubernetes.default.svc'
+    namespace: argocd
+  project: default
+  source: 
+     repoURL: 'https://github.com/Jasmine-Harit/gitops-certification-examples.git'
+     path: ./
+     targetRevision: HEAD
