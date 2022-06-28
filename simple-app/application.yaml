@@ -12,7 +12,7 @@ spec:
     path: ./simple-app
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    
 
   syncPolicy:
     syncOptions:
