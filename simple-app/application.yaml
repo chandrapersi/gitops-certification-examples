@@ -4,10 +4,10 @@ metadata:
   name: argo-application
   namespace: argocd
 spec:
-  project: default
+  project: wo-argoproj-resources
 
   source:
-    repoURL: https://github.com/Jasmine-Harit/gitops-certification-examples.git
+    repoURL: https://github.com/chandrapersi/gitops-certification-examples.git
     targetRevision: HEAD
     path: ./simple-app
   destination: 
